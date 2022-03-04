@@ -1,0 +1,19 @@
+{
+  "name": "ez-send",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.7.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
