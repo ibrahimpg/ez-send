@@ -1,21 +1,29 @@
 {
   "name": "ez-send",
   "version": "1.0.0",
-  "description": "A simple-to-use abstraction that sits on top of Nodemailer. Send emails in Node.js with a single function.",
+  "description": "Send emails in Node.js with a single function. A simple-to-use abstraction that sits on top of Nodemailer - for simple email use cases.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nodejs", "email", "send", "nodemailer"],
+  "keywords": [
+    "nodejs",
+    "email",
+    "send",
+    "nodemailer"
+  ],
   "author": "Ibrahim PG",
   "license": "MIT",
   "dependencies": {
     "nodemailer": "^6.7.2"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.4",
     "typescript": "^4.6.2"
   }
 }
