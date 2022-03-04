@@ -8,13 +8,13 @@ Send emails in Node with a single function.
 
 A simple-to-use abstraction that sits on top of Nodemailer for simple use cases and quick prototyping.
 
+Only works with username/password authentication and TLS-secured mail servers (PORT 465).
+
 Emails are automatically formatted in a simple HTML template.
 
 <br>
 
 ## Basic Example
-
-<br>
 
 #### **`.env`**
 ```
@@ -42,8 +42,6 @@ sendEmail('someone@example.com', 'Welcome!', body);
 <br>
 
 ## Modular Example with Express
-
-<br>
 
 #### **`.env`**
 ```
