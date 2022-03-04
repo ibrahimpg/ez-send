@@ -11,6 +11,7 @@ export default async (
   to: string,
   subject: string,
   text: string,
+  link: [string, string],
 ) => {
   let transporter: Transporter<SentMessageInfo>;
 
@@ -23,7 +24,7 @@ export default async (
     to,
     subject,
     text,
-    html: template(subject, text),
+    html: template(subject, text, link),
   };
 
   await transporter.sendMail(msg);

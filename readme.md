@@ -78,7 +78,7 @@ app.post('/register-user', async (req, res) => {
     const body = 'Thank you for signing up to our service! Click on the link below to confirm your email address:';
     const verificationCode = randomBytes(4).toString('hex');
     const verificationLink = `${process.env.API_URL}/confirm-email/${username}/${verificationCode}`;
-    await sendEmail(email, 'Thank you for signing up', body, verificationLink);
+    await sendEmail(email, 'Thank you for signing up', body, [verificationLink, 'Verify your email']);
     res.sendStatus(201);
   } catch (err) {
     // handle error
