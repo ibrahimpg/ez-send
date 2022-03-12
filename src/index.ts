@@ -2,9 +2,7 @@ import nodemailer, { SentMessageInfo, Transporter } from 'nodemailer';
 import { Options } from 'nodemailer/lib/mailer';
 import template from './template';
 
-export const Greeter = (name: string) => `Hello ${name}`; 
-
-export default async (
+export const Sender = async (
   host: string,
   pass: string,
   from: string,
@@ -27,5 +25,5 @@ export default async (
     html: template(subject, text, link),
   };
 
-  await transporter.sendMail(msg);
+  return await transporter.sendMail(msg);
 };
