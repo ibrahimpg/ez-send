@@ -1,6 +1,6 @@
 {
   "name": "ez-send",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "description": "Send emails in Node.js with a single function. A simple-to-use abstraction that sits on top of Nodemailer - for simple email use cases.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

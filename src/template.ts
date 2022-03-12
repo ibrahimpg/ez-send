@@ -8,5 +8,5 @@ export default (title: string, body: string, link?: [string, string]) => {
   if (!link) {
     return `${layoutOpening}${cardOpening}${title}${body}${cardClosing}${layoutClosing}`;
   }
-  return `${layoutOpening}${cardOpening}${title}${body}<a href="${link[0]}">${link[1]}</a>${cardClosing}${layoutClosing}`;
+  return `${layoutOpening}${cardOpening}${title} ${body}<a href="${link[0]}">${link[1]}</a>${cardClosing}${layoutClosing}`;
 };
